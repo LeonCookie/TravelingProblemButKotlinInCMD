@@ -150,20 +150,25 @@ internal object TSP {
                 """.trimIndent()
         )
         println("\n")
+        /*
         print("Podaj pierwszy wierzcholek: ")
         noweI = scobj.nextInt()
         print("Podaj drugie miasto: ")
-        noweI = scobj.nextInt()
+        noweJ = scobj.nextInt()
         print("Nowa wartosc dla miasta1")
         ILLE = scobj.nextInt()
         for (i in 0 until no_of_vertices) {
             for (j in 0 until no_of_vertices) {
-                if (noweJ == i && noweJ == j) {
+                if(noweJ == noweI ){
+                    print("wybacz, ale musza to byc dwa rozne miasta")
+                    break
+                }
+                else if (noweI == i && noweJ == j) {
                     two_dim_cost_matric[noweI][noweJ] = ILLE
                 }
                 print(two_dim_cost_matric[i][j].toString() + "    ")
             }
             println()
-        }
+        }*/
     }
 }
